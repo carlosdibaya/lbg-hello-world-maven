@@ -20,12 +20,16 @@ pipeline {
             }
         }
         stage('Build') {
+            steps {
             // Get some code from a GitHub repository
             echo "Now running build"
+            }
         }
         stage('Unit Tests') {
+            steps {
             // Get some code from a GitHub repository
             echo "Now running tests"
+            }
         }  
         stage('Compile') {
             steps {
