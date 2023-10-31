@@ -19,6 +19,14 @@ pipeline {
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
         }
+        stage('Build') {
+            // Get some code from a GitHub repository
+            echo "Now running build"
+        }
+        stage('Unit Tests') {
+            // Get some code from a GitHub repository
+            echo "Now running tests"
+        }  
         stage('Compile') {
             steps {
                 // Get some code from a GitHub repository
